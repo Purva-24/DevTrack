@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 20% 30% , #0b2a4a , #0f172a 40%) , radial-gradient( circle at 80% 20% , #1e1b4b , transparent 40%) , #0f172a;
+    color: white;
+}
+
+.nav {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00f5ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    color: #00f5ff;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+.main-left h1 {
+    font-size : 48px;
+    font-weight: 700;
+}
+
+.main-left h1 span {
+    background: linear-gradient(90deg , #00f5ff , #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-left p {
+    margin: 20px 0;
+    color: #94a3b8;
+}
+
+.main-left button {
+    padding: 15px 30px;
+    border: 3PX SOLID #00f5ff;
+    background: transparent;
+    color: #00f5ff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main.left button:hover {
+    background: #00f5ff;
+    color: #0f172a;
+}
+
+.streak {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+    font-size: 26px;
+}
+
+.streak::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg , #00f5ff , #a855f7);
+    z-index: -1;
+    filter: blur(25px);
+}
+
+.streak h2 {
+    font-size: 45px;
+    color: #ff9f1c;
+}
+
+.streak p {
+    color: #cbd5e1;
+}
+
+.goals {
+    padding: 100px;
+}
+
+.goals h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg , #00f5ff ,#a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(145deg , 31E293B , #0f172a);
+    padding: 20PX 25PX;
+    transition: 0.5s ;
+    position: relative;
+}
+
+.items:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px #00f5ff33;
+}
+
+.items input {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #00f5ff;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.items input:checked {
+    background: linear-gradient(135deg , #00f5ff , #a855f7);
+    box-shadow: 0 0 15px #00f5ff;
+}
+
+.items input:checked::after {
+    content: "✔️";
+    position: absolute;
+    color: #0f172a;
+    font-size: 15px;
+    top: 0px;
+    left: 0px;
+
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 45px 65px;
+}
+
+.cards {
+    background: linear-gradient(145deg , #1e293b , #0f172a);
+    padding: 30px;
+    border-radius: 18px;
+    width: 280px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.cards::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg , #00f5ff , #a855f7);
+    border-radius: 10px;
+}
+
+.cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 30px #00f5ff55;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 15px;
+    padding: 50px 80px;
+}
+
+.grid div {
+    background: #1e293b;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.grid .active {
+    background: linear-gradient(145deg , #16a34a , #15803d);
+    box-shadow: 0 0 15px #22c55e66;
+}
+
+.grid div:hover {
+    background-color: #00f5ff;
+    color: #0f172a;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.quote-card {
+    position: relative;
+    background: linear-gradient(145deg , #1e293b , #0f172a);
+    padding: 60px 80px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 700px;
+    font-size: 25px;
+}
+
+.quote-card::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 22px;
+    background: linear-gradient(135deg , #00f5ff , #a855f7);
+    z-index: -1;
+    filter: blur(25px);
+    opacity: 0.7;
+}
