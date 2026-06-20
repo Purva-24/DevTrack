@@ -41,19 +41,7 @@ daily-task-tracker/
 
 ---
 
-## 🚀 How to Run
 
-No installation or setup needed!
-
-1. Download or clone the repository
-2. Open `index.html` in any web browser
-3. That's it — start tracking your day!
-
-```bash
-git clone https://github.com/your-username/daily-task-tracker.git
-cd daily-task-tracker
-# Just open index.html in your browser
-```
 
 ---
 
